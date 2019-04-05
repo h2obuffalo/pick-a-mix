@@ -38,7 +38,7 @@ class AddPlayer extends Component {
     }
 
     render(){
-        const {playerName, playerSkill, playerAddress} = this.state;
+        const {playerName, playerAddress} = this.state;
         return(
             <Fragment>
                 <form onSubmit={ this.handleSubmit }>
@@ -48,21 +48,43 @@ class AddPlayer extends Component {
                         label="Player name"
                         handler={this.handleInputChange}
                         value={playerName}
+                        required
                         />
-                        <Input
+                        <label class="custom-control custom-radio">
+                         <Input
+                        type="radio"
                         name="playerSkill"
-                        label="Player Skill level"
-                        handler={this.handleInputChange}
-                        value={playerSkill}
+                        onChange={this.handleInputChange}
+                        required
                         />
+                        <span class="custom-control-indicator">*</span>
+                        </label>
+                       <label class="custom-control custom-radio">
+                         <Input
+                        type="radio"
+                        name="playerSkill"
+                        onChange={this.handleInputChange}
+                        required
+                        />
+                        <span class="custom-control-indicator">**</span>
+                        </label>
+                        <label class="custom-control custom-radio">
+                         <Input
+                        type="radio"
+                        name="playerSkill"
+                        onChange={this.handleInputChange}
+                        required
+                        />
+                        <span class="custom-control-indicator">***</span>
+                        </label>
                         <Input
                         name="playerAddress"
-                        label="Adress (optional)"
+                        label=" Address (optional)"
                         handler={this.handleInputChange}
                         value={playerAddress}
                         />
                     </div>
-                    <button className="btn btn-primary">Save</button>
+                    <button className="btn btn-primary">Submit</button>
                 </form>
             </Fragment>
         )
