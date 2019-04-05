@@ -1,8 +1,8 @@
 import React from 'react';
 
 
-const PlayerItem = ({name}) => ({
-    <li>{name}</li>
+const PlayerItem = ({player_name}) => ({
+    <li>{player_name}</li>
 });
 
 export default PlayerItem;

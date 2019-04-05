@@ -2,9 +2,10 @@ import React from 'react';
 import PlayerItem from './';
 
 const PlayerList = (props) => {
+    console.log(props);
        return  <ul>
                     {props.players.map((item, i) => (
-                        <PlayerItem  player={item} key={i} />
+                        <PlayerItem  key={i} />
                                                    ))}
                 </ul>
 
