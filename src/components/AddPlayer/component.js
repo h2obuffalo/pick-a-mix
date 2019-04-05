@@ -15,6 +15,14 @@ class AddPlayer extends Component {
 
         this.handleInputChange = this.handleInputChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleRadio = this.handleRadio.bind(this);
+    }
+
+    handleRadio(e){
+        let val = +e.target.value;
+        this.setState({
+            playerSkill:val
+        })
     }
 
     handleInputChange(e) {
@@ -53,8 +61,9 @@ class AddPlayer extends Component {
                         <label class="custom-control custom-radio">
                          <Input
                         type="radio"
+                        value="1"
                         name="playerSkill"
-                        onChange={this.handleInputChange}
+                        handler={this.handleRadio}
                         required
                         />
                         <span class="custom-control-indicator">*</span>
@@ -62,8 +71,9 @@ class AddPlayer extends Component {
                        <label class="custom-control custom-radio">
                          <Input
                         type="radio"
+                        value="2"
                         name="playerSkill"
-                        onChange={this.handleInputChange}
+                        handler={this.handleRadio}
                         required
                         />
                         <span class="custom-control-indicator">**</span>
@@ -71,8 +81,9 @@ class AddPlayer extends Component {
                         <label class="custom-control custom-radio">
                          <Input
                         type="radio"
+                        value="3"
                         name="playerSkill"
-                        onChange={this.handleInputChange}
+                        handler={this.handleRadio}
                         required
                         />
                         <span class="custom-control-indicator">***</span>
