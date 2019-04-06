@@ -1,4 +1,5 @@
 const ADD_PLAYER = "ADD_PLAYER";
+const UPDATE_PLAYERS = "UPDATE_PLAYERS";
 
 
 export const addPlayer = (player) => {
@@ -8,3 +9,9 @@ export const addPlayer = (player) => {
     }
 };
 
+export const updatePlayers = (players) => {
+    return {
+        type: UPDATE_PLAYERS,
+        players,
+    }
+}

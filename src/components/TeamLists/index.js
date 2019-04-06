@@ -1,6 +1,6 @@
 
 import { connect } from 'react-redux';
-import PlayerList from './component';
+import TeamLists from './component';
 
 const mapStateToProps = ({players}) => {
     return {
@@ -8,6 +8,6 @@ const mapStateToProps = ({players}) => {
     }
 }
 
-export default connect(mapStateToProps)(PlayerList);
+export default connect(mapStateToProps)(TeamLists);
 
 
