@@ -3,8 +3,8 @@ import Input from '../Input';
 
 const defaultState = {
             playerName: "",
-            playerSkill: "",
-            playerAddress:""
+            skill: 0,
+            address:"",
         };
 
 class AddPlayer extends Component {
@@ -21,7 +21,7 @@ class AddPlayer extends Component {
     handleRadio(e){
         let val = +e.target.value;
         this.setState({
-            playerSkill:val
+            skill:val
         })
     }
 
@@ -40,13 +40,13 @@ class AddPlayer extends Component {
         this.setState(defaultState);
         this.props.handleSave({
             player_name: this.state.playerName,
-            skill: this.state.playerSkill,
-            address: this.state.playerAddress
+            skill: this.state.skill,
+            address: this.state.address
         })
     }
 
     render(){
-        const {playerName, playerAddress} = this.state;
+        const {playerName, address} = this.state;
         return(
             <Fragment>
                 <form onSubmit={ this.handleSubmit }>
@@ -58,42 +58,42 @@ class AddPlayer extends Component {
                         value={playerName}
                         required
                         />
-                        <label class="custom-control custom-radio">
+                        <Input
+                        name="address"
+                        label=" Address (optional)"
+                        handler={this.handleInputChange}
+                        value={address}
+                        />
+                        <label className="custom-control custom-radio">
                          <Input
                         type="radio"
                         value="1"
-                        name="playerSkill"
+                        name="skill"
                         handler={this.handleRadio}
                         required
                         />
-                        <span class="custom-control-indicator">*</span>
+                        <span className="custom-control-indicator">*</span>
                         </label>
-                       <label class="custom-control custom-radio">
+                       <label className="custom-control custom-radio">
                          <Input
                         type="radio"
                         value="2"
-                        name="playerSkill"
+                        name="skill"
                         handler={this.handleRadio}
                         required
                         />
-                        <span class="custom-control-indicator">**</span>
+                        <span className="custom-control-indicator">**</span>
                         </label>
-                        <label class="custom-control custom-radio">
+                        <label className="custom-control custom-radio">
                          <Input
                         type="radio"
                         value="3"
-                        name="playerSkill"
+                        name="skill"
                         handler={this.handleRadio}
                         required
                         />
-                        <span class="custom-control-indicator">***</span>
+                        <span className="custom-control-indicator">***</span>
                         </label>
-                        <Input
-                        name="playerAddress"
-                        label=" Address (optional)"
-                        handler={this.handleInputChange}
-                        value={playerAddress}
-                        />
                     </div>
                     <button className="btn btn-primary">Submit</button>
                 </form>

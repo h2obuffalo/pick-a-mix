@@ -8,9 +8,14 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <AddPlayer />
-          <PlayerList />
+        <h1>Pic n Mix</h1>
         </header>
+        <div className="input-left">
+          <AddPlayer />
+        </div>
+        <div className="list-right">
+          <PlayerList />
+        </div>
       </div>
     );
   }
