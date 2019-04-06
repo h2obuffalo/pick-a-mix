@@ -24,13 +24,3 @@
     transform: rotate(360deg);
   }
 }
-
-.input-left {
-  float: left;
-  display: inline-flex;
-  width: 50%;
-}
-
-.list-right {
-  float: right;
-}
