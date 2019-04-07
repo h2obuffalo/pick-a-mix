@@ -12,3 +12,38 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.input-left {
+  float: left;
+  width: 40%;
+  margin:5%;
+  padding: 5%;
+}
+
+.list-right {
+width:30%;
+float: right;
+  margin:5%;
+   padding: 5%;
+}
+
+/* HIDE RADIO */
+[type=radio] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* IMAGE STYLES */
+[type=radio] + img {
+  cursor: pointer;
+  margin:1%;
+  font-size: 1.5em;
+}
+
+/* CHECKED STYLES */
+[type=radio]:checked + img {
+  outline: 2px solid #f00;
+}
+
