@@ -1,5 +1,6 @@
 import React from 'react';
 import PlayerItem from '../PlayerItem';
+import RestartButton from '../RestartButton';
 
 const TeamLists = ({players}) => {
     const team1 = [];
@@ -25,6 +26,7 @@ const TeamLists = ({players}) => {
             {team2.map(
                 (player, id)=> <PlayerItem {...player} key={id} />)}
             </ul>
+            <RestartButton />
         </div>
     )
 }

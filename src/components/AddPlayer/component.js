@@ -64,7 +64,7 @@ class AddPlayer extends Component {
                         handler={this.handleInputChange}
                         value={address}
                         />
-                        <label className="custom-control custom-radio">
+                        <label className="skill-radio">
                          <Input
                         type="radio"
                         value="1"
@@ -72,9 +72,9 @@ class AddPlayer extends Component {
                         handler={this.handleRadio}
                         required
                         />
-                        <span className="custom-control-indicator">*</span>
+                        <img src="http://placehold.it/40x60/b0f/fff&text=*" />
                         </label>
-                       <label className="custom-control custom-radio">
+                       <label className="skill-radio">
                          <Input
                         type="radio"
                         value="2"
@@ -82,9 +82,9 @@ class AddPlayer extends Component {
                         handler={this.handleRadio}
                         required
                         />
-                        <span className="custom-control-indicator">**</span>
+                        <img src="http://placehold.it/40x60/b0f/fff&text=**" />
                         </label>
-                        <label className="custom-control custom-radio">
+                        <label className="skill-radio">
                          <Input
                         type="radio"
                         value="3"
@@ -92,7 +92,7 @@ class AddPlayer extends Component {
                         handler={this.handleRadio}
                         required
                         />
-                        <span className="custom-control-indicator">***</span>
+                        <img src="http://placehold.it/40x60/0bf/fff&text=***" />
                         </label>
                     </div>
                     <button className="btn btn-primary">Submit</button>
