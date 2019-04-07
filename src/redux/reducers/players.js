@@ -6,6 +6,8 @@ const players = (state = initialState, action) => {
                 return [...action.players];
             case "ADD_PLAYER":
                 return [...state, action.player];
+            case "DELETE_TEAMS":
+                return initialState;
             default:
                 return initialState;
     }

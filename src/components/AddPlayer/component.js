@@ -2,10 +2,10 @@ import React, { Component, Fragment } from 'react';
 import Input from '../Input';
 
 const defaultState = {
-            playerName: "",
-            skill: 0,
-            address:"",
-        };
+    playerName: "",
+    skill: 0,
+    address:"",
+};
 
 class AddPlayer extends Component {
     constructor(props){

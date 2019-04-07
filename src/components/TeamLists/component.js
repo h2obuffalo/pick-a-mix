@@ -7,13 +7,7 @@ const TeamLists = ({players}) => {
     const team2 = [];
 
     players.forEach((player) => {
-        if(player.team === 1) {
-            team1.push(player);
-        } else if (player.team === 2) {
-            team2.push(player);
-        } else {
-            console.log(player.team);
-        }
+        player.team === 1 ? team1.push(player) : team2.push(player);
     })
 
     return(

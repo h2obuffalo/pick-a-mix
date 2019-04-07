@@ -16,7 +16,7 @@ const mapDispatchToProps = dispatch => {
             dispatch(getTeamsRand(players))
             history.push("/teams")
         }
+    }
+};
 
-         }
-    };
 export default connect(mapStateToProps, mapDispatchToProps)(MakeTeamsButton);
