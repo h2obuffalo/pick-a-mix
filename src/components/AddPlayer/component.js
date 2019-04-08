@@ -72,7 +72,7 @@ class AddPlayer extends Component {
                         handler={this.handleRadio}
                         required
                         />
-                        <img src="http://placehold.it/40x60/b0f/fff&text=*" />
+                        <img src="http://placehold.it/40x60/b0f/fff&text=*" alt="click this for one star skill rating" />
                         </label>
                        <label className="skill-radio">
                          <Input
@@ -82,7 +82,7 @@ class AddPlayer extends Component {
                         handler={this.handleRadio}
                         required
                         />
-                        <img src="http://placehold.it/40x60/b0f/fff&text=**" />
+                        <img src="http://placehold.it/40x60/b0f/fff&text=**" alt="click this for two star skill rating" />
                         </label>
                         <label className="skill-radio">
                          <Input
@@ -92,7 +92,7 @@ class AddPlayer extends Component {
                         handler={this.handleRadio}
                         required
                         />
-                        <img src="http://placehold.it/40x60/0bf/fff&text=***" />
+                        <img src="http://placehold.it/40x60/0bf/fff&text=***" alt="click this for three star skill rating"/>
                         </label>
                     </div>
                     <button className="btn btn-primary">Submit</button>

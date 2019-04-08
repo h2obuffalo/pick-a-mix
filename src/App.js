@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1>Pic n Mix</h1>
+          <h1>Pic a Mix</h1>
         </header>
         <Router history={history}>
           <Switch>
