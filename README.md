@@ -36,10 +36,19 @@ Unfortunately the react-native app is on the future to-do list as I ran in to pr
 
 
 #### The React and Laravel apps are hosted on aws
-The frontend can be found here
+The frontend can be found here:
 
 http://pickamix-hosting-mobilehub-1692059117.s3-website.eu-west-2.amazonaws.com/
 
+the repo for the backend is here:
 
+https://github.com/h2obuffalo/team-picker-backend
 
+## Still To Do List
+
+- Make it responsive for mobile use, currently image is not displaying correctly.
+- add a loading component so the delay in state change with the API call is no longer there
+- Add labels to the skill radio buttons to clarify what they are.
+- Add a remove button to each player in the list before the teams are made
+- Add a button to change the shuffle to actual random instead of by skill level.
 
