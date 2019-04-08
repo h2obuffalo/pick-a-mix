@@ -19,9 +19,9 @@ class AddPlayer extends Component {
     }
 
     handleRadio(e){
-        let val = +e.target.value;
+        let value = +e.target.value;
         this.setState({
-            skill:val
+            skill:value
         })
     }
 
@@ -37,7 +37,8 @@ class AddPlayer extends Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        this.setState(defaultState);
+        this.setState(defaultState
+            );
         this.props.handleSave({
             player_name: this.state.playerName,
             skill: this.state.skill,
@@ -64,7 +65,7 @@ class AddPlayer extends Component {
                         handler={this.handleInputChange}
                         value={address}
                         />
-                        <label className="skill-radio">
+                        <label className="custom-radio">
                          <Input
                         type="radio"
                         value="1"
@@ -74,7 +75,7 @@ class AddPlayer extends Component {
                         />
                         <img src="http://placehold.it/40x60/b0f/fff&text=*" alt="click this for one star skill rating" />
                         </label>
-                       <label className="skill-radio">
+                       <label className="custom-radio">
                          <Input
                         type="radio"
                         value="2"
@@ -84,7 +85,7 @@ class AddPlayer extends Component {
                         />
                         <img src="http://placehold.it/40x60/b0f/fff&text=**" alt="click this for two star skill rating" />
                         </label>
-                        <label className="skill-radio">
+                        <label className="custom-radio">
                          <Input
                         type="radio"
                         value="3"

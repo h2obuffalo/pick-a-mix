@@ -10,13 +10,13 @@ const TeamLists = ({players}) => {
     })
 
     return(
-        <div className="player-lists" >
+        <div className="" >
             <ul className="left-list"  >
               {team1.map(
                 (player, id)=> <PlayerItem {...player} key={id} />)}
             </ul>
             <ul className="right-list" >
-            {team2.map(
+              {team2.map(
                 (player, id)=> <PlayerItem {...player} key={id} />)}
             </ul>
         </div>

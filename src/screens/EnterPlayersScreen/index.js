@@ -6,11 +6,13 @@ import MakeTeamsButton from '../../components/MakeTeamsButton';
 const EnterPlayersScreen = () => {
     return (
         <Fragment>
-        <div className="input-left">
+        <div className="d-flex flex-column align-items-center justify-content-center p-3 block" >
+        <div className="col-12 col-md-6 col-xl-4">
         <AddPlayer />
         <MakeTeamsButton />
         </div>
-        <div className="list-right">
+        </div>
+        <div className="d-flex flex-column align-items-center justify-content-center p-3 block" >
         <PlayerList />
         </div>
         </Fragment>
