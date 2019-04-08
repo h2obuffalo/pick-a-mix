@@ -53,61 +53,47 @@ class AddPlayer extends Component {
                 <form onSubmit={ this.handleSubmit }>
                     <div className="form-group">
                         <Input
-                        name="playerName"
-                        label="Player name"
-                        handler={this.handleInputChange}
-                        value={playerName}
-                        required
+                            name="playerName"
+                            label="Player name"
+                            handler={this.handleInputChange}
+                            value={playerName}
+                            required
                         />
                         <Input
-                        name="address"
-                        label=" Address (optional)"
-                        handler={this.handleInputChange}
-                        value={address}
+                            name="address"
+                            label=" Address (optional)"
+                            handler={this.handleInputChange}
+                            value={address}
                         />
                         <label className="custom-radio">
                          <Input
-                        type="radio"
-                        value="1"
-                        name="skill"
-                        handler={this.handleRadio}
-                        required
+                            type="radio"
+                            value="1"
+                            name="skill"
+                            handler={this.handleRadio}
+                            required
                         />
-                        <img src="http://placehold.it/40x60/b0f/fff&text=*" alt="click this for one star skill rating" />
-                        </label>
-                       <label className="custom-radio">
-                         <Input
-                        type="radio"
-                        value="2"
-                        name="skill"
-                        handler={this.handleRadio}
-                        required
-                        />
-                        <img src="http://placehold.it/40x60/b0f/fff&text=**" alt="click this for two star skill rating" />
-                        </label>
-                        <label className="custom-radio" for="skill">
-                         <Input
-                         id="color-4"
-                         type="radio"
-                         value="3"
-                         name="skill"
-                         handler={this.handleRadio}
-                         required
-                         />
-                        <span>
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
-                        </span>
+                        <img src="http://placehold.it/40x60/aff/fff&text=*" alt="click this for one star skill rating" />
                         </label>
                         <label className="custom-radio">
                          <Input
-                         id="color-4"
-                         type="radio"
-                         value="3"
-                         name="skill"
-                         handler={this.handleRadio}
-                         required
-                         />
-                        <img src="http://placehold.it/40x60/0bf/fff&text=***" alt="click this for three star skill rating"/>
+                            type="radio"
+                            value="2"
+                            name="skill"
+                            handler={this.handleRadio}
+                            required
+                        />
+                        <img src="http://placehold.it/40x60/ffc/fff&text=**" alt="click this for two star skill rating" />
+                        </label>
+                        <label className="custom-radio">
+                         <Input
+                            type="radio"
+                            value="3"
+                            name="skill"
+                            handler={this.handleRadio}
+                            required
+                        />
+                        <img src="http://placehold.it/40x60/5CB/fff&text=***" alt="click this for three star skill rating"/>
                         </label>
                     </div>
                     <button className="btn btn-primary">Add Player</button>
