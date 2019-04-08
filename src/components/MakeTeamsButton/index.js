@@ -1,19 +1,21 @@
 import { connect } from 'react-redux';
 import MakeTeamsButton from './component';
-import { getTeamsRand } from '../../actions/apiActions'
+import { addPlayersAPI } from '../../actions/apiActions'
 import history from '../../history';
 
 
-const mapStateToProps = ({players}) => {
+const mapStateToProps = (state) => {
     return {
-        players,
+        players:state
     }
 }
 
 const mapDispatchToProps = dispatch => {
+
     return {
-        handleSubmit: (players) => {
-            dispatch(getTeamsRand(players))
+        handleSubmit: ({players}) => {
+            console.log(players)
+            dispatch(addPlayersAPI(players))
             history.push("/teams")
         }
     }
