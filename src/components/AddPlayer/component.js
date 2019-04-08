@@ -3,7 +3,7 @@ import Input from '../Input';
 
 const defaultState = {
     playerName: "",
-    skill: 0,
+    skill: 1,
     address:"",
 };
 
@@ -85,18 +85,32 @@ class AddPlayer extends Component {
                         />
                         <img src="http://placehold.it/40x60/b0f/fff&text=**" alt="click this for two star skill rating" />
                         </label>
+                        <label className="custom-radio" for="skill">
+                         <Input
+                         id="color-4"
+                         type="radio"
+                         value="3"
+                         name="skill"
+                         handler={this.handleRadio}
+                         required
+                         />
+                        <span>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                        </span>
+                        </label>
                         <label className="custom-radio">
                          <Input
-                        type="radio"
-                        value="3"
-                        name="skill"
-                        handler={this.handleRadio}
-                        required
-                        />
+                         id="color-4"
+                         type="radio"
+                         value="3"
+                         name="skill"
+                         handler={this.handleRadio}
+                         required
+                         />
                         <img src="http://placehold.it/40x60/0bf/fff&text=***" alt="click this for three star skill rating"/>
                         </label>
                     </div>
-                    <button className="btn btn-primary">Submit</button>
+                    <button className="btn btn-primary">Add Player</button>
                 </form>
             </Fragment>
         )

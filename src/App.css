@@ -3,13 +3,13 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: transparent;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
   font-size: calc(10px + 2vmin);
-  color: Brown;
+  color: #000;
 }
 
 body {
@@ -20,7 +20,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("./assets/deserted.jpg");
+   background-image: url("./assets/deserted.jpg");
   background-size: cover;
   background-repeat: no-repeat;;
 }
@@ -46,7 +46,7 @@ code {
 /* IMAGE STYLES */
 [type=radio] + img {
   cursor: pointer;
-  margin:1%;
+  margin:5%;
   font-size: 1.5em;
   border-radius: 5%;
 }
@@ -55,5 +55,11 @@ code {
 [type=radio]:checked + img {
   outline: 2px solid ;
 }
+.custom-radio {
+  padding-right: 2%;
+}
 
+.makeTeamBtn {
+  margin: 5%;
+}
 

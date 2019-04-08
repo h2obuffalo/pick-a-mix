@@ -11,6 +11,9 @@ const EnterPlayersScreen = () => {
         <AddPlayer />
         <MakeTeamsButton />
         </div>
+        <div className="col-12 col-md-6 col-xl-4">
+        <p> Enter ten players names and their skill level and then click make teams!</p>
+        </div>
         </div>
         <div className="d-flex flex-column align-items-center justify-content-center p-3 block" >
         <PlayerList />
