@@ -35,4 +35,11 @@ My original plan was to create a react and react-native front end systems and us
 Unfortunately the react-native app is on the future to-do list as I ran in to problems with redux and connecting the API, which meant I was behind schedule. 
 
 
+#### The React and Laravel apps are hosted on aws
+The frontend can be found here
+
+http://pickamix-hosting-mobilehub-1692059117.s3-website.eu-west-2.amazonaws.com/
+
+
+
 
