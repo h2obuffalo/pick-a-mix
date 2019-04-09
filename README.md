@@ -38,7 +38,7 @@ Unfortunately the react-native app is on the future to-do list as I ran in to pr
 #### The React and Laravel apps are hosted on aws
 The frontend can be found here:
 
-http://pickamix-hosting-mobilehub-1692059117.s3-website.eu-west-2.amazonaws.com/
+http://pick-a-mix-20190409212756-hostingbucket-teamaws.s3-website-eu-west-1.amazonaws.com/
 
 the repo for the backend is here:
 
