@@ -3,14 +3,13 @@ import { updatePlayers, wipeTeams, loaded } from './index';
 
 
 export const addPlayersAPI = (players) => (dispatch, getState) => {
-    let stateplayers = getState().players;
-    let loadedstate = getState().loaded;
-    loaded(loadedstate);
+    dispatch(loaded(false));
+    console.log(getState());
     axios.post("/storeteam", {
-        players: stateplayers
+        players,
     }).then( ({data}) => {
         dispatch(updatePlayers(data.data))
-        loaded(loadedstate)
+        dispatch(loaded(true))
     }).catch( error => console.log(error))
 }
 

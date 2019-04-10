@@ -1,15 +1,11 @@
-export const initialState = false;
+export const initialState = true;
 
 
-const setLoaded = (state, {loaded}) => ({
-    ...state,
-    loaded : true,
-})
 
 const loaded = (state = initialState, action) => {
         switch (action.type) {
             case "LOADED":
-                return setLoaded(state,action);
+                return true;
             default:
                 return initialState;
         }

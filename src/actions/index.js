@@ -24,9 +24,9 @@ export const wipeTeams = () => {
     }
 }
 
-export const loaded = () => {
+export const loaded = (loaded) => {
     return {
         type: LOADED,
-        loaded: true,
+         loaded,
     }
 }

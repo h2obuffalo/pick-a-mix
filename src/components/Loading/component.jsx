@@ -10,7 +10,8 @@ class Loading extends Component {
 
     render() {
         const { children, loaded } = this.props;
-        return !loaded ? (
+        console.log(loaded)
+        return loaded ? (
             children
         ) : (
             <Fragment>

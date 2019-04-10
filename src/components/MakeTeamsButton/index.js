@@ -4,18 +4,17 @@ import { addPlayersAPI } from '../../actions/apiActions'
 import history from '../../history';
 
 
-const mapStateToProps = (state) => {
+const mapStateToProps = ({players}) => {
     return {
-        players:state
+        players,
     }
 }
 
 const mapDispatchToProps = dispatch => {
 
     return {
-        handleSubmit: ({players}) => {
-            console.log(players.players)
-            dispatch(addPlayersAPI(players.players))
+        handleSubmit: (players) => {
+            dispatch(addPlayersAPI(players))
             history.push("/teams")
         }
     }

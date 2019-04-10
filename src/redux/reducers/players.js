@@ -8,6 +8,8 @@ const players = (state = initialState, action) => {
                 return [...state, action.player];
             case "DELETE_TEAMS":
                 return initialState;
+            case "LOADED":
+                return state;
             default:
                 return initialState;
     }
