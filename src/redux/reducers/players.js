@@ -9,7 +9,7 @@ const players = (state = initialState, action) => {
             case "DELETE_TEAMS":
                 return initialState;
             default:
-                return initialState;
+                return state;
     }
 };
 

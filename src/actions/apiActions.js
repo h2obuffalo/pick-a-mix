@@ -1,27 +1,22 @@
 import axios from "../axios";
-import { updatePlayers, wipeTeams } from './index';
+import { updatePlayers, wipeTeams, loaded } from './index';
 
-export const getTeamsRand = (data) => (dispatch) => {
-    axios.get("/teamskill").then( ({data}) => {
-        dispatch(updatePlayers(data.data))
-    }).catch( error => console.log(error))
-
-}
 
 export const addPlayersAPI = (players) => (dispatch, getState) => {
-    let stateplayers = getState().players;
+    dispatch(loaded(false));
     axios.post("/storeteam", {
-        players: stateplayers
+        players,
     }).then( ({data}) => {
-        dispatch(getTeamsRand(data.data))
+        dispatch(updatePlayers(data.data))
+        dispatch(loaded(true))
     }).catch( error => console.log(error))
 }
 
-export const deleteTeams = (data) => (dispatch, getState) => {
-
-    axios.delete("/dropplayers").then( (data) => {
+export const deleteTeams = (players) => (dispatch, getState) => {
+    dispatch(loaded(false));
+    axios.delete("/dropplayers").then( (players) => {
         dispatch(wipeTeams())
-
+        dispatch(loaded(true))
     }).catch( error => console.log(error))
 
 }
