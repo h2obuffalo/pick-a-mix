@@ -46,8 +46,7 @@ https://github.com/h2obuffalo/team-picker-backend
 
 ## Still To Do List
 
-- Make it responsive for mobile use, currently image is not displaying correctly.
-- add a loading component so the delay in state change with the API call is no longer there
+- add a loading component so it shows while the request is sent to the api
 - Add labels to the skill radio buttons to clarify what they are.
 - Add a remove button to each player in the list before the teams are made
 - Add a button to change the shuffle to actual random instead of by skill level.
