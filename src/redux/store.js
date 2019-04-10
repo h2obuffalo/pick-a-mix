@@ -1,10 +1,12 @@
 import { createStore, applyMiddleware, compose } from "redux";
 import reducer from './reducers';
 import {initialState as playersInitialState } from './reducers/players';
+import {initialState as loadedInitialState }  from './reducers/loaded';
 import thunk from 'redux-thunk';
 
 const initialState = {
-    players:playersInitialState,
+    players: playersInitialState,
+    loaded: loadedInitialState,
 }
 
 const reduxDevTools =

@@ -1,6 +1,7 @@
 const ADD_PLAYER = "ADD_PLAYER";
 const UPDATE_PLAYERS = "UPDATE_PLAYERS";
 const DELETE_TEAMS = "DELETE_TEAMS";
+const LOADED = "LOADED";
 
 
 export const addPlayer = (player) => {
@@ -20,5 +21,12 @@ export const updatePlayers = (players) => {
 export const wipeTeams = () => {
     return {
         type: DELETE_TEAMS,
+    }
+}
+
+export const loaded = () => {
+    return {
+        type: LOADED,
+        loaded: true,
     }
 }

@@ -1,0 +1,14 @@
+{
+    "teamaws": {
+        "awscloudformation": {
+            "AuthRoleName": "pick-a-mix-20190409212603-authRole",
+            "UnauthRoleArn": "arn:aws:iam::962048437633:role/pick-a-mix-20190409212603-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::962048437633:role/pick-a-mix-20190409212603-authRole",
+            "Region": "eu-west-1",
+            "DeploymentBucketName": "pick-a-mix-20190409212603-deployment",
+            "UnauthRoleName": "pick-a-mix-20190409212603-unauthRole",
+            "StackName": "pick-a-mix-20190409212603",
+            "StackId": "arn:aws:cloudformation:eu-west-1:962048437633:stack/pick-a-mix-20190409212603/b2c7bf70-5b05-11e9-b7f5-0276cc331c40"
+        }
+    }
+}

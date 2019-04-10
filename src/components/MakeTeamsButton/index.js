@@ -14,8 +14,8 @@ const mapDispatchToProps = dispatch => {
 
     return {
         handleSubmit: ({players}) => {
-            console.log(players)
-            dispatch(addPlayersAPI(players))
+            console.log(players.players)
+            dispatch(addPlayersAPI(players.players))
             history.push("/teams")
         }
     }
