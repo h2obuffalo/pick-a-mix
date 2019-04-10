@@ -36,7 +36,6 @@ awsmobile
 awsmobilejs/
 src/aws-config.js
 src/aws-exports 2.js
-src/components/Loading/
 
 #amplify
 amplify/\#current-cloud-backend
