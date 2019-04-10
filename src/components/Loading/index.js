@@ -6,12 +6,7 @@ const mapStateToProps = ({ loaded }) => ({
         loaded,
 });
 
-const mapDispatchToProps = (dispatch) => ({
-    // handleLoad: () => dispatch(getExercisePlan())
-    handleLoad: () => console.log("loading")
-});
 
 export default connect(
-    mapStateToProps,
-    mapDispatchToProps
+    mapStateToProps
 )(Loading);

@@ -4,7 +4,6 @@ import { updatePlayers, wipeTeams, loaded } from './index';
 
 export const addPlayersAPI = (players) => (dispatch, getState) => {
     dispatch(loaded(false));
-    console.log(getState());
     axios.post("/storeteam", {
         players,
     }).then( ({data}) => {
@@ -13,11 +12,11 @@ export const addPlayersAPI = (players) => (dispatch, getState) => {
     }).catch( error => console.log(error))
 }
 
-export const deleteTeams = (data) => (dispatch, getState) => {
-
-    axios.delete("/dropplayers").then( (data) => {
+export const deleteTeams = (players) => (dispatch, getState) => {
+    dispatch(loaded(false));
+    axios.delete("/dropplayers").then( (players) => {
         dispatch(wipeTeams())
-
+        dispatch(loaded(true))
     }).catch( error => console.log(error))
 
 }

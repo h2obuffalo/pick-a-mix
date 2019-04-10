@@ -5,9 +5,9 @@ export const initialState = true;
 const loaded = (state = initialState, action) => {
         switch (action.type) {
             case "LOADED":
-                return true;
+                return action.loaded;
             default:
-                return initialState;
+                return state;
         }
 };
 
